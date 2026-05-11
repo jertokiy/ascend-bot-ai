@@ -9,7 +9,7 @@ TELEGRAM_TOKEN = '8374574297:AAHBE4MvKwRqkkDwITgG84XG1N8xj1nkqVM'
 GEMINI_KEY = 'AIzaSyB_xif6893H-KbYQq7e1XJM1wcSbDQcAfI'
 
 genai.configure(api_key=GEMINI_KEY)
-model = genai.GenerativeModel('gemini-1.5-flash')
+model = genai.GenerativeModel('gemini-pro-vision')
 
 # Увеличиваем таймаут, чтобы "семафор" не вылетал
 bot = Bot(token=TELEGRAM_TOKEN, timeout=60)
